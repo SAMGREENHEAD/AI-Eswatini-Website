@@ -1,5 +1,5 @@
 
-```markdown
+
 # 🌍 AI Eswatini Website
 
 Welcome to the official repository for the **AI Eswatini** website — a dynamic, responsive, and professional platform that showcases our mission to drive inclusive and responsible AI adoption in Eswatini through education, research, innovation, and policy advocacy.
@@ -33,7 +33,6 @@ Welcome to the official repository for the **AI Eswatini** website — a dynamic
 
 ````
 
----
 
 ## 🔧 Setup Instructions
 
@@ -62,8 +61,6 @@ yarn dev
 
 The site will be available at [http://localhost:5173](http://localhost:5173)
 
-
----
 
 ## 🖼️ Assets
 
