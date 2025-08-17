@@ -57,7 +57,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="relative w-screen max-w-none ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]  text-gray-50 dark:bg-gray-900 dark:text-gray-100"
+      className="relative w-screen max-w-none ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]  text-gray-50 bg-gray-900 dark:text-gray-100"
       aria-labelledby="site-footer-heading"
     >
       {/* Full-bleed yellow line */}

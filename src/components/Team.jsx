@@ -57,7 +57,7 @@ export default function Team() {
   ];
 
   return (
-    <section className="bg-gray-700 dark:bg-gray-900 py-12 rounded-2xl">
+    <section className="bg-gray-900 py-12 rounded-2xl">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-10 text-white dark:text-gray-100">
           Meet Our Team
