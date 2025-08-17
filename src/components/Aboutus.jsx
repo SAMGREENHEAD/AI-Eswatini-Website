@@ -10,7 +10,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="relative py-20 bg-blue-950/30">
+    <section id="about" className="relative py-20 bg-blue-950">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-">
         {/* Floating glass panel */}
         <div
