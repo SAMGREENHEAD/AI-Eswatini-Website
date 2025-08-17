@@ -71,7 +71,7 @@ export default function Hero() {
             >
               <span
                 className="
-                  !font-lobster italic font-bold px-14
+                  !font-lobster italic font-bold px-10 text-center
                   bg-[linear-gradient(90deg,#3E5EB9,#FFD900,#D21034,#FFD900,#3E5EB9)]
                   bg-clip-text text-transparent [background-size:300%_100%]
                   animate-[swazi_8s_linear_infinite] reduce-motion
