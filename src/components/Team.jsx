@@ -67,7 +67,7 @@ export default function Team() {
           {members.map((m) => (
             <div
               key={m.name}
-              className="flex flex-col items-center text-center bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 transition-transform duration-200 hover:scale-[1.02] hover:shadow-xl"
+              className="flex flex-col items-center text-center bg-blue-800 dark:bg-gray-800 shadow-lg rounded-2xl p-6 transition-transform duration-200 hover:scale-[1.02] hover:shadow-xl"
             >
               <img
                 src={m.img}
@@ -75,13 +75,13 @@ export default function Team() {
                 loading="lazy"
                 className="w-36 h-36 rounded-full object-cover border-4 border-yellow-400 shadow-sm mb-4"
               />
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+              <h3 className="text-xl font-semibold text-gray-50 dark:text-gray-100">
                 {m.name}
               </h3>
-              <span className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              <span className="text-sm text-gray-50 dark:text-gray-400 mb-3">
                 {m.role}
               </span>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed max-w-xs mb-4">
+              <p className="text-gray-50 dark:text-gray-300 text-sm leading-relaxed max-w-xs mb-4">
                 {m.desc}
               </p>
 
@@ -92,7 +92,7 @@ export default function Team() {
                     href={m.socials.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-700 hover:text-blue-800"
+                    className="text-blue-700 hover:text-sky-900"
                   >
                     <FaLinkedin size={20} />
                   </a>
@@ -102,7 +102,7 @@ export default function Team() {
                     href={m.socials.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sky-500 hover:text-sky-600"
+                    className="text-sky-500 hover:text-sky-900"
                   >
                     <FaTwitter size={20} />
                   </a>
@@ -112,7 +112,7 @@ export default function Team() {
                     href={m.socials.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 dark:text-gray-300 hover:text-black"
+                    className="text-gray-50 dark:text-gray-300 hover:text-black"
                   >
                     <FaGithub size={20} />
                   </a>
