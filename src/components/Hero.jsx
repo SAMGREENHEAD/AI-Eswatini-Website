@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import ai1 from "../assets/chat.jpg"; // pick your preferred hero image
+import ai1 from "../assets/chat.jpg"; // hero image
 
 export default function Hero() {
   const wrapRef = useRef(null);
@@ -22,7 +22,13 @@ export default function Hero() {
   };
 
   return (
-    <section className="font-roboto w-full bg-gray-900 text-gray-100 rounded-2xl min-h-screen">
+    <section
+      className="
+        font-roboto
+        w-screen max-w-none ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]
+        bg-gray-900 text-gray-100 rounded-2xl
+      "
+    >
       {/* Animations */}
       <style>{`
         @keyframes swazi { 0%{background-position:0% 50%} 100%{background-position:200% 50%} }
@@ -37,26 +43,45 @@ export default function Hero() {
         onMouseMove={handleMove}
         onMouseLeave={handleLeave}
         style={{ "--rx": 0, "--ry": 0 }}
-        className="  px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-16"
+        className=" pt-28 pb-14 min-h-[85vh] flex items-center py-16 lg:py-20"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          {/* Left (Text) */}
+        <div
+          className="
+            w-full mx-auto px-4 sm:px-6 lg:px-8
+            max-w-[1280px] xl:max-w-[1400px]
+            grid grid-cols-1 lg:grid-cols-2 items-center gap-3 sm:gap-4 lg:gap-5
+          "
+        >
+          {/* Left: Text */}
           <div
-            className="text-center lg:text-left lg:max-w-2xl transition-transform duration-300 ease-out reduce-motion align-items-center"
+            className="
+              lg:max-w-xl text-center lg:text-left px-11
+              transition-transform duration-300 ease-out reduce-motion
+            "
             style={{
               transform: `translate3d(calc(var(--rx) * 6px), calc(var(--ry) * 6px), 0)
                           rotateX(calc(var(--ry) * -4deg)) rotateY(calc(var(--rx) * 4deg))`,
             }}
           >
-            <h1 className="font-bold leading-tight text-4xl sm:text-5xl xl:text-6xl">
-              <span className="!font-lobster italic font-bold bg-[linear-gradient(90deg,#3E5EB9,#FFD900,#D21034,#FFD900,#3E5EB9)]
-                               bg-clip-text text-transparent [background-size:300%_100%]
-                               animate-[swazi_8s_linear_infinite] reduce-motion mx-">
+            <h1
+              className="
+                font-bold leading-tight tracking-tight
+                text-[clamp(2.25rem,4.5vw,4rem)]
+              "
+            >
+              <span
+                className="
+                  !font-lobster italic font-bold px-14
+                  bg-[linear-gradient(90deg,#3E5EB9,#FFD900,#D21034,#FFD900,#3E5EB9)]
+                  bg-clip-text text-transparent [background-size:300%_100%]
+                  animate-[swazi_8s_linear_infinite] reduce-motion
+                "
+              >
                 AI Eswatini
               </span>
             </h1>
 
-            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300 max-w-prose mx-auto lg:mx-0">
+            <p className=" text-center mt-5 text-lg text-gray-300 leading-relaxed max-w-[60ch] mx-auto lg:mx-0">
               Driving inclusive and responsible Artificial Intelligence in Eswatini through{" "}
               <span className="font-semibold bg-[linear-gradient(90deg,#3E5EB9,#FFD900,#D21034,#FFD900,#3E5EB9)]
                     bg-clip-text text-transparent [background-size:300%_100%]
@@ -72,17 +97,17 @@ export default function Hero() {
                     animate-[swazi_12s_linear_infinite] reduce-motion">policy advocacy</span>.
             </p>
 
-            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 sm:items-center">
+            <div className="mt-7 flex flex-col sm:flex-row gap-4 sm:items-center justify-center lg:justify-start">
               <a
                 href="#about"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold
+                className="w-full sm:w-auto px-6 sm:px-7 py-3 text-base sm:text-lg font-semibold
                            rounded bg-red-600 text-white hover:bg-red-700 transition"
               >
                 Get Started
               </a>
               <a
                 href="#projects"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold
+                className="w-full sm:w-auto px-6 sm:px-7 py-3 text-base sm:text-lg font-semibold
                            border rounded border-gray-300 text-gray-100 hover:bg-yellow-200 hover:text-gray-900 transition"
               >
                 Explore Projects
@@ -90,9 +115,12 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right (Static Image) */}
+          {/* Right: Image */}
           <div
-            className="p-2 sm:p-6 mt-4 lg:mt-0 flex items-center justify-center transition-transform duration-300 ease-out reduce-motion"
+            className="
+              mt-6 lg:mt-0 flex items-center justify-center lg:justify-start lg:-ml-4 xl:-ml-6
+              transition-transform duration-300 ease-out reduce-motion py-25
+            "
             style={{
               transform: `translate3d(calc(var(--rx) * -8px), calc(var(--ry) * -8px), 0)
                           rotateX(calc(var(--ry) * 3deg)) rotateY(calc(var(--rx) * -3deg))`,
@@ -103,8 +131,12 @@ export default function Hero() {
               src={ai1}
               alt="AI Eswatini illustration"
               loading="lazy"
-              className="w-full max-w-xs sm:max-w-sm lg:max-w-xl h-auto
-                         rounded-xl shadow-lg ring-1 ring-black/5"
+              className="
+                w-full
+        max-w-[560px] sm:max-w-[620px] lg:max-w-[680px] 2xl:max-w-[760px]
+        max-h-[320px] sm:max-h-[420px] lg:max-h-[520px]
+        object-contain rounded-2xl shadow-2xl ring-1 ring-black/5
+              "
             />
           </div>
         </div>
