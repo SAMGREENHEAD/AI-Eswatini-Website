@@ -67,7 +67,7 @@ export default function Hero() {
       >
         {/* Left (Text) */}
         <div
-          className="flex flex-col justify-center p-6 text-center lg:text-left lg:max-w-xl
+          className="flex flex-col justify-center p-3 text-center lg:text-left lg:max-w-xl
                      transition-transform duration-300 ease-out
                      group-hover:scale-[1.03]"
           style={{
@@ -76,7 +76,7 @@ export default function Hero() {
                rotateY(calc(var(--rx) * 4deg))`,
           }}
         >
-          <h1 className="text-5xl font-bold leading-tight sm:text-6xl">
+          <h1 className="text-5xl font-bold leading-tight sm:text-6xl p1">
             <span
               className="!font-lobster italic font-bold
                 bg-[linear-gradient(90deg,#3E5EB9,#FFD900,#D21034,#FFD900,#3E5EB9)]
@@ -98,7 +98,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="mt-6 mb-8 text-lg sm:mb-12">
+          <p className="mt-6 mb-8 text-lg sm:mb-12 text-black">
             Driving inclusive and responsible Artificial Intelligence in Eswatini
             through{" "}
             <span className="font-semibold bg-[linear-gradient(90deg,#3E5EB9,#FFD900,#D21034,#FFD900,#3E5EB9)]
@@ -140,7 +140,7 @@ export default function Hero() {
             </a>
             <a
               href="#projects"
-              className="px-8 py-3 text-lg font-semibold border rounded border-gray-800 hover:bg-yellow-200 transition"
+              className="px-8 py-3 text-lg text-black font-semibold border rounded border-gray-800 hover:bg-yellow-200 transition"
             >
               Explore Projects
             </a>
