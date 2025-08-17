@@ -36,11 +36,11 @@ export default function Events() {
   ];
 
   return (
-    <section id='events'className="py-20 bg-white text-gray-800">
+    <section id='events'className="py-20 bg-blue-950 text-gray-50">
       <div className="container px-6 mx-auto space-y-12">
         <div className="space-y-2 text-center">
-          <h2 className="text-4xl font-bold text-blue-900">Current Events</h2>
-          <p className="text-sm text-gray-600 max-w-xl mx-auto">
+          <h2 className="text-4xl font-bold text-yellow-200">Current Events</h2>
+          <p className="text-sm text-gray-50 max-w-xl mx-auto">
             Join our mission to grow AI across Eswatini — one event at a time.
           </p>
         </div>

@@ -1,4 +1,23 @@
+
 @import "tailwindcss";
 html {
   scroll-behavior: smooth;
+}
+
+
+@layer base {
+  html, body, #root { @apply h-full; }
+
+  /* Solid from 0 → 75%, then fade to 50% */
+  body {
+    @apply text-white;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(23 37 84) 0%,          /* blue-950 */
+      rgb(23 37 84) 90%,         /* keep solid until 75% */
+      rgba(23, 37, 84, 0.5) 100% /* fade by the bottom */
+    );
+    background-attachment: fixed; /* keep anchored on scroll */
+    min-height: 100vh;
+  }
 }

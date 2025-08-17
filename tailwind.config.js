@@ -2,13 +2,15 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        lobster: ['"Lobster Two"', 'cursive'],
       },
+      // keep your custom animations if you want them
       animation: {
         'fade-in': 'fadeIn 1s ease-out forwards',
         'slide-in-down': 'slideInDown 1s ease-out forwards',
@@ -32,4 +34,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
