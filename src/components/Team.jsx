@@ -67,7 +67,7 @@ export default function Team() {
           {members.map((m) => (
             <div
               key={m.name}
-              className="flex flex-col items-center text-center bg-blue-800 dark:bg-gray-800 shadow-lg rounded-2xl p-6 transition-transform duration-200 hover:scale-[1.02] hover:shadow-xl"
+              className="flex flex-col items-center text-center bg-gray-600 dark:bg-gray-800 shadow-lg rounded-2xl p-6 transition-transform duration-200 hover:scale-[1.02] hover:shadow-xl"
             >
               <img
                 src={m.img}
