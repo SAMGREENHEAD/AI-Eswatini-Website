@@ -62,7 +62,7 @@ export default function Header() {
        * Visual shell: sticky, slightly translucent gradient with blur, and subtle shadow
        * - supports-[backdrop-filter]: guards blur on browsers that support it
        */
-      className="fixed inset-x-0 top-0 z-50 bg-gradient-to-r from-blue-950/95 to-blue-900 backdrop-blur supports-[backdrop-filter]:bg-blue-950/80 border-b-10 border-yellow-400 shadow-md"
+      className="fixed inset-x-0 top-0 z-50 bg-gradient-to-r from-blue-300 to-blue-950 backdrop-blur supports-[backdrop-filter]:bg-blue-950/80 border-b-10 border-yellow-400 shadow-md"
     >
       {/* Skip link helps keyboard users jump past the nav quickly */}
       <a
@@ -111,7 +111,7 @@ export default function Header() {
             <a
               href="#blog"
               /* Slightly filled blog button to balance the Join CTA visually */
-              className="rounded-xl border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80"
+              className="rounded-xl border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80"
             >
               Blog
             </a>
