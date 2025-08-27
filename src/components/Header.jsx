@@ -111,14 +111,14 @@ export default function Header() {
             <a
               href="#blog"
               /* Slightly filled blog button to balance the Join CTA visually */
-              className="rounded-xl border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80"
+              className="rounded-xl border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-yellow-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80"
             >
               Blog
             </a>
             <a
               href="#join"
               /* Primary CTA uses brand accent (yellow); adjust to your palette */
-              className="rounded-xl bg-yellow-400 px-5 py-2 text-sm font-semibold text-black shadow transition hover:bg-yellow-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300"
+              className="rounded-xl bg-yellow-400 px-5 py-2 text-sm font-semibold text-black shadow transition hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300"
             >
               Join
             </a>

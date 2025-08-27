@@ -26,7 +26,7 @@ export default function Hero() {
       className="
         font-roboto
         w-screen max-w-none ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]
-        bg-gray-900 text-gray-100 rounded-2xl
+        bg-gray-900 text-gray-100 rounded-2xl relative
       "
     >
       {/* Animations */}
@@ -38,12 +38,13 @@ export default function Hero() {
         }
       `}</style>
 
+      {/* MAIN HERO */}
       <div
         ref={wrapRef}
         onMouseMove={handleMove}
         onMouseLeave={handleLeave}
         style={{ "--rx": 0, "--ry": 0 }}
-        className=" pt-28 pb-14 min-h-[85vh] flex items-center py-16 lg:py-20"
+        className="pt-20 pb-28 min-h-[85vh] flex items-center py-16 lg:py-20"
       >
         <div
           className="
@@ -81,7 +82,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className=" text-center mt-5 text-lg text-gray-300 leading-relaxed max-w-[60ch] mx-auto lg:mx-0">
+            <p className="text-center mt-5 text-lg text-gray-300 leading-relaxed max-w-[60ch] mx-auto lg:mx-0">
               Driving inclusive and responsible Artificial Intelligence in Eswatini through{" "}
               <span className="font-semibold bg-[linear-gradient(90deg,#3E5EB9,#FFD900,#D21034,#FFD900,#3E5EB9)]
                     bg-clip-text text-transparent [background-size:300%_100%]
@@ -133,13 +134,36 @@ export default function Hero() {
               loading="lazy"
               className="
                 w-full
-        max-w-[560px] sm:max-w-[620px] lg:max-w-[680px] 2xl:max-w-[760px]
-        max-h-[320px] sm:max-h-[420px] lg:max-h-[520px]
-        object-contain rounded-2xl shadow-2xl ring-1 ring-black/5
+                max-w-[560px] sm:max-w-[620px] lg:max-w-[680px] 2xl:max-w-[760px]
+                max-h-[320px] sm:max-h-[420px] lg:max-h-[520px]
+                object-contain rounded-2xl shadow-2xl ring-1 ring-black/5
               "
             />
           </div>
         </div>
+      </div>
+
+      {/* --- CENTERED TAGLINE, RAISED FROM BOTTOM --- */}
+      <div
+        className="
+          absolute left-1/2 -translate-x-1/2
+          bottom-10 sm:bottom-12 lg:bottom-16
+          z-40 pointer-events-none
+          px-4
+        "
+      >
+        <p
+          className="
+            text-center text-sm sm:text-base lg:text-lg font-semibold tracking-wide
+            text-yellow-300
+            supports-[background-clip:text]:bg-[linear-gradient(90deg,#FFD900,#D21034,#3E5EB9)]
+            supports-[background-clip:text]:bg-clip-text supports-[background-clip:text]:text-transparent
+            [background-size:300%_100%] animate-[swazi_10s_linear_infinite] reduce-motion
+            max-w-[95vw] sm:max-w-[80vw] lg:max-w-[60vw]
+          "
+        >
+          To become Eswatini’s leading catalyst for research, development, and responsible adoption of Artificial Intelligence.
+        </p>
       </div>
     </section>
   );
